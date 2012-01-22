@@ -22,12 +22,12 @@ consists of utility objects which extend DBus allowing for
 peer-to-peer discoverability of known objects without needing a
 central registrar.
 
-%package	devel
+%package devel
 Summary:	Development files for %{name}
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
-%description	devel
+%description devel
 The %{name}-devel package contains libraries and header files for
 developing applications that use %{name}.
 
