@@ -7,6 +7,7 @@ License:	LGPL v3
 Group:		Libraries
 URL:		https://launchpad.net/dee
 Source0:	http://launchpad.net/dee/1.0/%{version}/+download/%{name}-%{version}.tar.gz
+# Source0-md5:	8c152b3b1ad5bf03079054b1f7d5f637
 BuildRequires:	dbus-glib-devel
 BuildRequires:	gobject-introspection-devel
 BuildRequires:	gtk-doc
