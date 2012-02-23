@@ -1,13 +1,13 @@
 Summary:	Model to synchronize multiple instances over DBus
 Name:		dee
-Version:	1.0.0
+Version:	1.0.4
 Release:	1
 # GPLv3-licensed tests and examples are in the tarball, but not installed
 License:	LGPL v3
 Group:		Libraries
 URL:		https://launchpad.net/dee
 Source0:	http://launchpad.net/dee/1.0/%{version}/+download/%{name}-%{version}.tar.gz
-# Source0-md5:	8c152b3b1ad5bf03079054b1f7d5f637
+# Source0-md5:	a243ec6f229550b41eb7e3aa48815409
 BuildRequires:	dbus-glib-devel
 BuildRequires:	gobject-introspection-devel
 BuildRequires:	gtk-doc
