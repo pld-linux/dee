@@ -1,7 +1,7 @@
 Summary:	Model to synchronize multiple instances over DBus
 Name:		dee
 Version:	1.0.4
-Release:	1
+Release:	2
 # GPLv3-licensed tests and examples are in the tarball, but not installed
 License:	LGPL v3
 Group:		Libraries
@@ -48,7 +48,8 @@ Dokumentacja API biblioteki %{name}.
 
 %build
 %configure \
-	--disable-static
+	--disable-static \
+	--with-html-dir=%{_gtkdocdir}
 
 %{__make}
 
@@ -86,4 +87,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %files apidocs
 %defattr(644,root,root,755)
-%{_datadir}/gtk-doc/html/dee-1.0
+%{_gtkdocdir}/dee-%{version}
