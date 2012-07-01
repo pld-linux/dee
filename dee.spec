@@ -55,6 +55,8 @@ Dokumentacja API biblioteki %{name}.
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_gtkdocdir}
+
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
@@ -87,4 +89,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %files apidocs
 %defattr(644,root,root,755)
-%{_gtkdocdir}/dee-%{version}
+%{_gtkdocdir}/dee-1.0
