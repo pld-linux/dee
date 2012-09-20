@@ -1,7 +1,7 @@
 Summary:	Model to synchronize multiple instances over DBus
 Name:		dee
 Version:	1.0.4
-Release:	2
+Release:	3
 # GPLv3-licensed tests and examples are in the tarball, but not installed
 License:	LGPL v3
 Group:		Libraries
