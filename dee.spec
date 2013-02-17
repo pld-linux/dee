@@ -1,7 +1,7 @@
 Summary:	Model to synchronize multiple instances over DBus
 Name:		dee
 Version:	1.0.14
-Release:	1
+Release:	2
 # GPLv3-licensed tests and examples are in the tarball, but not installed
 License:	LGPL v3
 Group:		Libraries
@@ -13,7 +13,6 @@ BuildRequires:	gobject-introspection-devel
 BuildRequires:	gtk-doc
 BuildRequires:	rpmbuild(macros) >= 1.219
 BuildRequires:	vala
-Requires:	python-pygobject
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -42,6 +41,14 @@ API and internal documentation for %{name} library.
 
 %description apidocs -l pl.UTF-8
 Dokumentacja API biblioteki %{name}.
+
+%package -n python-dee
+Summary:	Python bindings for dee
+Group:		Development/Languages/Python
+Requires:	python-pygobject
+
+%description -n python-dee
+Python bindings for dee.
 
 %prep
 %setup -q
@@ -76,7 +83,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/girepository-1.0/*.typelib
 %attr(755,root,root) %{_libdir}/libdee-*.so.*.*.*
 %ghost %{_libdir}/libdee-*.so.4
-%{py_sitedir}/gi/overrides/Dee.py[co]
 
 %files	devel
 %defattr(644,root,root,755)
@@ -90,3 +96,7 @@ rm -rf $RPM_BUILD_ROOT
 %files apidocs
 %defattr(644,root,root,755)
 %{_gtkdocdir}/dee-1.0
+
+%files -n python-dee
+%defattr(644,root,root,755)
+%{py_sitedir}/gi/overrides/Dee.py[co]
