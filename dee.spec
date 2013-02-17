@@ -1,7 +1,7 @@
 Summary:	Model to synchronize multiple instances over DBus
 Name:		dee
 Version:	1.0.14
-Release:	2
+Release:	3
 # GPLv3-licensed tests and examples are in the tarball, but not installed
 License:	LGPL v3
 Group:		Libraries
@@ -45,7 +45,7 @@ Dokumentacja API biblioteki %{name}.
 %package -n python-dee
 Summary:	Python bindings for dee
 Group:		Development/Languages/Python
-Requires:	python-pygobject
+Requires:	python-pygobject3
 
 %description -n python-dee
 Python bindings for dee.
