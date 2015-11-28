@@ -6,7 +6,7 @@ Summary:	Model to synchronize multiple instances over DBus
 Summary(pl.UTF-8):	Model synchronizacji wielu instancji poprzez DBus
 Name:		dee
 Version:	1.0.14
-Release:	9
+Release:	10
 # GPLv3-licensed tests and examples are in the tarball, but not installed
 License:	LGPL v3
 Group:		Libraries
