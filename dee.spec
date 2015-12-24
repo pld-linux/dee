@@ -5,16 +5,15 @@
 Summary:	Model to synchronize multiple instances over DBus
 Summary(pl.UTF-8):	Model synchronizacji wielu instancji poprzez DBus
 Name:		dee
-Version:	1.0.14
-Release:	10
+Version:	1.2.7
+Release:	1
 # GPLv3-licensed tests and examples are in the tarball, but not installed
 License:	LGPL v3
 Group:		Libraries
 Source0:	http://launchpad.net/dee/1.0/%{version}/+download/%{name}-%{version}.tar.gz
-# Source0-md5:	473b4181e26538af0fb753255da7945c
+# Source0-md5:	b92f27f0a99cac24c2128880601bb7d7
 URL:		https://launchpad.net/dee
-BuildRequires:	dbus-glib-devel
-BuildRequires:	glib2-devel >= 1:2.26
+BuildRequires:	glib2-devel >= 1:2.32
 BuildRequires:	gobject-introspection-devel >= 0.10.2
 BuildRequires:	gtk-doc >= 1.8
 BuildRequires:	libicu-devel >= 4.6
@@ -22,7 +21,7 @@ BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.219
 # not needed for releases
 #BuildRequires:	vala
-Requires:	glib2 >= 1:2.26
+Requires:	glib2 >= 1:2.32
 Requires:	libicu >= 4.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -45,7 +44,7 @@ Summary:	Development files for libdee
 Summary(pl.UTF-8):	Pliki programistyczne biblioteki libdee
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Requires:	glib2-devel >= 1:2.26
+Requires:	glib2-devel >= 1:2.32
 Requires:	libicu-devel >= 4.6
 
 %description devel
