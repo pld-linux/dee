@@ -6,7 +6,7 @@ Summary:	Model to synchronize multiple instances over DBus
 Summary(pl.UTF-8):	Model synchronizacji wielu instancji poprzez DBus
 Name:		dee
 Version:	1.2.7
-Release:	1
+Release:	2
 # GPLv3-licensed tests and examples are in the tarball, but not installed
 License:	LGPL v3
 Group:		Libraries
@@ -99,6 +99,9 @@ Summary(pl.UTF-8):	API libdee dla języka Vala
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 Requires:	vala
+%if "%{_rpmversion}" >= "5"
+BuildArch:	noarch
+%endif
 
 %description -n vala-dee
 Libdee API for Vala language.
