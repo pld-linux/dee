@@ -6,12 +6,13 @@ Summary:	Model to synchronize multiple instances over DBus
 Summary(pl.UTF-8):	Model synchronizacji wielu instancji poprzez DBus
 Name:		dee
 Version:	1.2.7
-Release:	4
+Release:	5
 # GPLv3-licensed tests and examples are in the tarball, but not installed
 License:	LGPL v3
 Group:		Libraries
 Source0:	http://launchpad.net/dee/1.0/%{version}/+download/%{name}-%{version}.tar.gz
 # Source0-md5:	b92f27f0a99cac24c2128880601bb7d7
+Patch0:		no-Werror.patch
 URL:		https://launchpad.net/dee
 BuildRequires:	glib2-devel >= 1:2.32
 BuildRequires:	gobject-introspection-devel >= 0.10.2
@@ -111,8 +112,13 @@ API libdee dla języka Vala.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
+%{__aclocal}
+%{__autoconf}
+%{__autoheader}
+%{__automake}
 %configure \
 	--disable-silent-rules \
 	%{?with_static_libs:--enable-static} \
