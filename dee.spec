@@ -73,9 +73,7 @@ Biblioteka statyczna libdee.
 Summary:	Libdee API documentation
 Summary(pl.UTF-8):	Dokumentacja API biblioteki libdee
 Group:		Documentation
-%if "%{_rpmversion}" >= "5"
 BuildArch:	noarch
-%endif
 
 %description apidocs
 API documentation for libdee library.
@@ -101,9 +99,7 @@ Summary(pl.UTF-8):	API libdee dla języka Vala
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 Requires:	vala
-%if "%{_rpmversion}" >= "5"
 BuildArch:	noarch
-%endif
 
 %description -n vala-dee
 Libdee API for Vala language.
