@@ -14,6 +14,7 @@ Source0:	http://launchpad.net/dee/1.0/%{version}/+download/%{name}-%{version}.ta
 # Source0-md5:	b92f27f0a99cac24c2128880601bb7d7
 Patch0:		no-Werror.patch
 Patch1:		vapi-skip-properties.patch
+Patch2:		dee-1.2.7-fix-duplicates-vala-0.5X.patch
 URL:		https://launchpad.net/dee
 BuildRequires:	glib2-devel >= 1:2.32
 BuildRequires:	gobject-introspection-devel >= 0.10.2
@@ -111,6 +112,7 @@ API libdee dla języka Vala.
 %setup -q
 %patch0 -p1
 %patch1 -p1
+%patch2 -p1
 
 %build
 %{__aclocal}
