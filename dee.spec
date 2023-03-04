@@ -21,6 +21,7 @@ BuildRequires:	gobject-introspection-devel >= 0.10.2
 BuildRequires:	gtk-doc >= 1.8
 BuildRequires:	libicu-devel >= 4.6
 BuildRequires:	pkgconfig
+BuildRequires:	rpm-build >= 4.6
 BuildRequires:	rpmbuild(macros) >= 1.219
 # not needed for releases
 #BuildRequires:	vala
