@@ -121,6 +121,7 @@ API libdee dla języka Vala.
 %{__autoheader}
 %{__automake}
 %configure \
+	PYTHON="%{__python}" \
 	--disable-silent-rules \
 	%{?with_static_libs:--enable-static} \
 	--with-html-dir=%{_gtkdocdir}
